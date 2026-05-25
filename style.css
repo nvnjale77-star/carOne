@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./bg.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.city {
+    width: 100%;
+    height: 150px;
+    /* background-image: url('./city.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.road {
+   width: 100%;
+   height: 50px;
+   background-color: rgb(79, 78, 78);  
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 60px;
+}
+.road div{
+    width: 100px;
+    height: 3px;
+    background-color: white;
+}
+
+.car{
+    width: 480px;
+    height: 180px;
+    background-image: url('./car.webp');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 6px;
+    left: 300px;
+}
+
+.tire1{
+    width: 75px;
+    height: 75px;
+   background-image: url('./tire.png');
+   background-position: center;
+   background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4px;
+    left: 54px;
+    animation: rotatetTire .7s linear infinite;
+}
+@keyframes rotatetTire {
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.tire2{
+    width: 75px;
+    height: 75px;
+   background-image: url('./tire.png');
+   background-position: center;
+   background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4px;
+    left: 338px;
+    animation: rotatetTire .7s linear infinite;
+}
+@keyframes rotatetTire {
+    100%{
+        rotate: 360deg;
+    }
+}
